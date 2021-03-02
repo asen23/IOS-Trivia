@@ -1,0 +1,6 @@
+framework module Pods_Learn_IOS_AM {
+  umbrella header "Pods-Learn IOS AM-umbrella.h"
+
+  export *
+  module * { export * }
+}

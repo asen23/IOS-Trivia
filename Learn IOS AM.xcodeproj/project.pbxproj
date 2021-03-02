@@ -3,17 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		10DFEA2425ECAC90002EF553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA2325ECAC90002EF553 /* AppDelegate.swift */; };
 		10DFEA2625ECAC90002EF553 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA2525ECAC90002EF553 /* SceneDelegate.swift */; };
 		10DFEA2825ECAC90002EF553 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA2725ECAC90002EF553 /* ViewController.swift */; };
-		10DFEA2B25ECAC90002EF553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DFEA2925ECAC90002EF553 /* Main.storyboard */; };
 		10DFEA2E25ECAC90002EF553 /* Learn_IOS_AM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA2C25ECAC90002EF553 /* Learn_IOS_AM.xcdatamodeld */; };
 		10DFEA3025ECAC97002EF553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DFEA2F25ECAC97002EF553 /* Assets.xcassets */; };
 		10DFEA3325ECAC97002EF553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DFEA3125ECAC97002EF553 /* LaunchScreen.storyboard */; };
+		10DFEA4825EDEC1A002EF553 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA4625EDEC1A002EF553 /* HomeViewController.swift */; };
+		10DFEA4925EDEC1A002EF553 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10DFEA4725EDEC1A002EF553 /* HomeViewController.xib */; };
+		10DFEA4D25EDF3AE002EF553 /* HomeResponseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA4C25EDF3AE002EF553 /* HomeResponseWrapper.swift */; };
+		10DFEA5025EDF910002EF553 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA4F25EDF910002EF553 /* HomeViewModel.swift */; };
+		10DFEA6525EE0FF9002EF553 /* HomeNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA6425EE0FF9002EF553 /* HomeNetworkProvider.swift */; };
+		10DFEA6825EE1020002EF553 /* HomeTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFEA6725EE1020002EF553 /* HomeTarget.swift */; };
+		34BF4F5246A4C5580BD9ED32 /* Pods_Learn_IOS_AM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E53A3EC0A7077176BB1F70 /* Pods_Learn_IOS_AM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +27,19 @@
 		10DFEA2325ECAC90002EF553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10DFEA2525ECAC90002EF553 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		10DFEA2725ECAC90002EF553 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		10DFEA2A25ECAC90002EF553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10DFEA2D25ECAC90002EF553 /* Learn_IOS_AM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Learn_IOS_AM.xcdatamodel; sourceTree = "<group>"; };
 		10DFEA2F25ECAC97002EF553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10DFEA3225ECAC97002EF553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10DFEA3425ECAC97002EF553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DFEA4625EDEC1A002EF553 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		10DFEA4725EDEC1A002EF553 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		10DFEA4C25EDF3AE002EF553 /* HomeResponseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseWrapper.swift; sourceTree = "<group>"; };
+		10DFEA4F25EDF910002EF553 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		10DFEA6425EE0FF9002EF553 /* HomeNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkProvider.swift; sourceTree = "<group>"; };
+		10DFEA6725EE1020002EF553 /* HomeTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTarget.swift; sourceTree = "<group>"; };
+		71E53A3EC0A7077176BB1F70 /* Pods_Learn_IOS_AM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learn_IOS_AM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3CC9CD08F78FF5BF7337E2E /* Pods-Learn IOS AM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn IOS AM.release.xcconfig"; path = "Target Support Files/Pods-Learn IOS AM/Pods-Learn IOS AM.release.xcconfig"; sourceTree = "<group>"; };
+		F7A7FA8CE36D934B4827E0C4 /* Pods-Learn IOS AM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn IOS AM.debug.xcconfig"; path = "Target Support Files/Pods-Learn IOS AM/Pods-Learn IOS AM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BF4F5246A4C5580BD9ED32 /* Pods_Learn_IOS_AM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0997D01BAD296D40DB6B5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71E53A3EC0A7077176BB1F70 /* Pods_Learn_IOS_AM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		10DFEA1725ECAC8F002EF553 = {
 			isa = PBXGroup;
 			children = (
 				10DFEA2225ECAC90002EF553 /* Learn IOS AM */,
 				10DFEA2125ECAC90002EF553 /* Products */,
+				200EBCC6A8118D742B71DEEA /* Pods */,
+				0B0997D01BAD296D40DB6B5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +83,78 @@
 		10DFEA2225ECAC90002EF553 /* Learn IOS AM */ = {
 			isa = PBXGroup;
 			children = (
+				10DFEA3F25EDEA29002EF553 /* Feature */,
 				10DFEA2325ECAC90002EF553 /* AppDelegate.swift */,
 				10DFEA2525ECAC90002EF553 /* SceneDelegate.swift */,
 				10DFEA2725ECAC90002EF553 /* ViewController.swift */,
-				10DFEA2925ECAC90002EF553 /* Main.storyboard */,
 				10DFEA2F25ECAC97002EF553 /* Assets.xcassets */,
 				10DFEA3125ECAC97002EF553 /* LaunchScreen.storyboard */,
 				10DFEA3425ECAC97002EF553 /* Info.plist */,
 				10DFEA2C25ECAC90002EF553 /* Learn_IOS_AM.xcdatamodeld */,
 			);
 			path = "Learn IOS AM";
+			sourceTree = "<group>";
+		};
+		10DFEA3F25EDEA29002EF553 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				10DFEA4025EDEA5D002EF553 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		10DFEA4025EDEA5D002EF553 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				10DFEA4525EDEBF7002EF553 /* API */,
+				10DFEA4425EDEBEB002EF553 /* ViewModel */,
+				10DFEA4325EDEBE7002EF553 /* View */,
+				10DFEA4225EDEBE0002EF553 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		10DFEA4225EDEBE0002EF553 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10DFEA4C25EDF3AE002EF553 /* HomeResponseWrapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10DFEA4325EDEBE7002EF553 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10DFEA4625EDEC1A002EF553 /* HomeViewController.swift */,
+				10DFEA4725EDEC1A002EF553 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10DFEA4425EDEBEB002EF553 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				10DFEA4F25EDF910002EF553 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		10DFEA4525EDEBF7002EF553 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				10DFEA6425EE0FF9002EF553 /* HomeNetworkProvider.swift */,
+				10DFEA6725EE1020002EF553 /* HomeTarget.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		200EBCC6A8118D742B71DEEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7FA8CE36D934B4827E0C4 /* Pods-Learn IOS AM.debug.xcconfig */,
+				B3CC9CD08F78FF5BF7337E2E /* Pods-Learn IOS AM.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10DFEA3725ECAC97002EF553 /* Build configuration list for PBXNativeTarget "Learn IOS AM" */;
 			buildPhases = (
+				325EF0E2D2CC20A504395B20 /* [CP] Check Pods Manifest.lock */,
 				10DFEA1C25ECAC90002EF553 /* Sources */,
 				10DFEA1D25ECAC90002EF553 /* Frameworks */,
 				10DFEA1E25ECAC90002EF553 /* Resources */,
+				D036FDC87295C9FBADBFBE1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,19 +218,66 @@
 			files = (
 				10DFEA3325ECAC97002EF553 /* LaunchScreen.storyboard in Resources */,
 				10DFEA3025ECAC97002EF553 /* Assets.xcassets in Resources */,
-				10DFEA2B25ECAC90002EF553 /* Main.storyboard in Resources */,
+				10DFEA4925EDEC1A002EF553 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		325EF0E2D2CC20A504395B20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Learn IOS AM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D036FDC87295C9FBADBFBE1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Learn IOS AM/Pods-Learn IOS AM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Learn IOS AM/Pods-Learn IOS AM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Learn IOS AM/Pods-Learn IOS AM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10DFEA1C25ECAC90002EF553 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DFEA4825EDEC1A002EF553 /* HomeViewController.swift in Sources */,
+				10DFEA4D25EDF3AE002EF553 /* HomeResponseWrapper.swift in Sources */,
+				10DFEA6525EE0FF9002EF553 /* HomeNetworkProvider.swift in Sources */,
+				10DFEA5025EDF910002EF553 /* HomeViewModel.swift in Sources */,
 				10DFEA2825ECAC90002EF553 /* ViewController.swift in Sources */,
 				10DFEA2425ECAC90002EF553 /* AppDelegate.swift in Sources */,
+				10DFEA6825EE1020002EF553 /* HomeTarget.swift in Sources */,
 				10DFEA2E25ECAC90002EF553 /* Learn_IOS_AM.xcdatamodeld in Sources */,
 				10DFEA2625ECAC90002EF553 /* SceneDelegate.swift in Sources */,
 			);
@@ -150,14 +286,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		10DFEA2925ECAC90002EF553 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10DFEA2A25ECAC90002EF553 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		10DFEA3125ECAC97002EF553 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +415,7 @@
 		};
 		10DFEA3825ECAC97002EF553 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A7FA8CE36D934B4827E0C4 /* Pods-Learn IOS AM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +434,7 @@
 		};
 		10DFEA3925ECAC97002EF553 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CC9CD08F78FF5BF7337E2E /* Pods-Learn IOS AM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

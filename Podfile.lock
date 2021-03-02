@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (5.4.0)
+  - Differentiator (4.0.1)
+  - FLEX (4.2.2)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (1.1.0)
+  - MXSegmentedControl (1.1.0)
+  - MXSegmentedPager (4.0.0):
+    - MXPagerView (~> 0.2)
+    - MXParallaxHeader (~> 1.0)
+    - MXSegmentedControl (~> 1.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxOptional (4.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
+  - SDWebImage (5.10.0):
+    - SDWebImage/Core (= 5.10.0)
+  - SDWebImage/Core (5.10.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - FLEX (~> 4.1)
+  - Moya/RxSwift (= 14.0.0)
+  - MXSegmentedPager
+  - RxCocoa (= 5.1.1)
+  - RxDataSources (= 4.0.1)
+  - RxOptional (= 4.1.0)
+  - RxSwift (= 5.1.0)
+  - SDWebImage (~> 5.0)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - FLEX
+    - Moya
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedControl
+    - MXSegmentedPager
+    - RxCocoa
+    - RxDataSources
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FLEX: dbd68ae9c67fcc872c79c9e5a728f38243dfaa78
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: de3c867e10ba46e8f6e20c8ee1f2a910372b3b94
+  MXSegmentedControl: f39e46199a52cbc03b1c845e150215119f2542f5
+  MXSegmentedPager: 527ee76513c96e6607eebe473fe49b7ab4971616
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: bd21ce16566efca760022d2e58e4ee9a3b4eb2d1
+
+COCOAPODS: 1.10.0
