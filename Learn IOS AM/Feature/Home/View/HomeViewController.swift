@@ -14,7 +14,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var txtScore: UILabel!
     @IBOutlet weak var txtQuestion: UILabel!
     @IBOutlet weak var btn1Choice: UIButton!
+    @IBOutlet weak var labelChoice1: UILabel!
     @IBOutlet weak var btn2Choice: UIButton!
+    @IBOutlet weak var labelChoice2: UILabel!
+    
     @IBOutlet weak var btn3Choice: UIButton!
     @IBOutlet weak var btn4Choice: UIButton!
     var question = ResponseDetail()
@@ -60,8 +63,8 @@ class HomeViewController: UIViewController {
             choice.append(data.correctChoice)
             choice.append(contentsOf: data.wrongChoice ?? ["","",""])
             choice.shuffle()
-            self?.btn1Choice.setTitle( choice[0], for: .normal)
-            self?.btn2Choice.setTitle( choice[1], for: .normal)
+            self?.labelChoice1.text = choice[0]
+            self?.labelChoice2.text = choice[1]
             self?.btn3Choice.setTitle( choice[2], for: .normal)
             self?.btn4Choice.setTitle( choice[3], for: .normal)
             for (i,x) in choice.enumerated(){

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,10 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Learn_IOS_AM" customModuleProvider="target">
             <connections>
-                <outlet property="btn1Choice" destination="kd2-Vv-qSX" id="TPd-4e-8aV"/>
-                <outlet property="btn2Choice" destination="QGw-AB-To4" id="4Re-ya-I43"/>
+                <outlet property="btn1Choice" destination="JxK-ec-Avz" id="hAc-iS-aqI"/>
+                <outlet property="btn2Choice" destination="Rmo-F7-QpW" id="vC2-5F-tAA"/>
                 <outlet property="btn3Choice" destination="4Aw-IA-Mpz" id="k2O-as-zfl"/>
                 <outlet property="btn4Choice" destination="64i-4X-CmX" id="iOA-Wq-JZJ"/>
+                <outlet property="labelChoice1" destination="9Tf-US-6Im" id="LGg-V0-GTC"/>
+                <outlet property="labelChoice2" destination="EEN-Fy-AQU" id="rP8-Rs-cTW"/>
                 <outlet property="txtQuestion" destination="piO-Ff-P6k" id="dQy-a5-NPG"/>
                 <outlet property="txtScore" destination="qN0-QM-INU" id="15Q-3x-M41"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -31,73 +34,91 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="piO-Ff-P6k">
-                    <rect key="frame" x="20" y="133" width="354" height="268"/>
+                    <rect key="frame" x="20" y="133" width="354" height="118"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kd2-Vv-qSX">
-                    <rect key="frame" x="5" y="409" width="380" height="48"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tf-US-6Im">
+                    <rect key="frame" x="5" y="259" width="380" height="36"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <state key="normal" title="Choice 1"/>
+                    <color key="textColor" systemColor="linkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxK-ec-Avz" userLabel="Choice 1">
+                    <rect key="frame" x="5" y="259" width="380" height="36"/>
                     <connections>
-                        <action selector="btn1OnClick:" destination="-1" eventType="touchUpInside" id="Mrh-Oc-ybl"/>
+                        <action selector="btn1OnClick:" destination="-1" eventType="touchUpInside" id="28C-nE-ggG"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QGw-AB-To4">
-                    <rect key="frame" x="5" y="465" width="380" height="48"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <state key="normal" title="Choice 2"/>
-                    <connections>
-                        <action selector="btn2OnClick:" destination="-1" eventType="touchUpInside" id="3Jy-6z-CRV"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Aw-IA-Mpz">
-                    <rect key="frame" x="5" y="521" width="380" height="48"/>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Aw-IA-Mpz">
+                    <rect key="frame" x="5" y="355" width="380" height="48"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="Choice 3"/>
                     <connections>
                         <action selector="btn3OnClick:" destination="-1" eventType="touchUpInside" id="04k-Ce-hkT"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="64i-4X-CmX">
-                    <rect key="frame" x="5" y="577" width="380" height="48"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="64i-4X-CmX">
+                    <rect key="frame" x="5" y="411" width="380" height="48"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="Choice 4"/>
                     <connections>
                         <action selector="btn4OnClick:" destination="-1" eventType="touchUpInside" id="8vH-yO-Zac"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEN-Fy-AQU">
+                    <rect key="frame" x="5" y="311" width="380" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" systemColor="linkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmo-F7-QpW" userLabel="Choice 2">
+                    <rect key="frame" x="5" y="311" width="380" height="36"/>
+                    <connections>
+                        <action selector="btn2OnClick:" destination="-1" eventType="touchUpInside" id="tsW-3X-lHe"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QGw-AB-To4" secondAttribute="trailing" constant="5" id="2JZ-SG-plX"/>
-                <constraint firstItem="kd2-Vv-qSX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="4hz-T2-CqG"/>
-                <constraint firstItem="QGw-AB-To4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ATm-Gv-EgG"/>
-                <constraint firstItem="4Aw-IA-Mpz" firstAttribute="top" secondItem="QGw-AB-To4" secondAttribute="bottom" constant="8" id="Acz-IS-9pq"/>
-                <constraint firstItem="kd2-Vv-qSX" firstAttribute="top" secondItem="piO-Ff-P6k" secondAttribute="bottom" constant="8" id="HGt-X9-PIg"/>
+                <constraint firstItem="4Aw-IA-Mpz" firstAttribute="top" secondItem="EEN-Fy-AQU" secondAttribute="bottom" constant="8" symbolic="YES" id="9uQ-ca-hva"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Aw-IA-Mpz" secondAttribute="trailing" constant="5" id="I6Y-BN-kQl"/>
+                <constraint firstItem="JxK-ec-Avz" firstAttribute="trailing" secondItem="9Tf-US-6Im" secondAttribute="trailing" id="I6g-Si-QMW"/>
                 <constraint firstItem="qN0-QM-INU" firstAttribute="leading" secondItem="piO-Ff-P6k" secondAttribute="leading" id="IWG-j8-zRg"/>
                 <constraint firstItem="4Aw-IA-Mpz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KoI-pQ-fpN"/>
                 <constraint firstItem="qN0-QM-INU" firstAttribute="trailing" secondItem="piO-Ff-P6k" secondAttribute="trailing" id="MQu-jp-6UJ"/>
-                <constraint firstItem="QGw-AB-To4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="QV5-zk-p27"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kd2-Vv-qSX" secondAttribute="trailing" constant="5" id="V8K-77-QjL"/>
+                <constraint firstItem="9Tf-US-6Im" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="Pkz-IM-LXe"/>
+                <constraint firstItem="Rmo-F7-QpW" firstAttribute="top" secondItem="EEN-Fy-AQU" secondAttribute="top" id="R59-if-5Sa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="64i-4X-CmX" secondAttribute="bottom" constant="16" id="TBg-AN-roV"/>
+                <constraint firstItem="JxK-ec-Avz" firstAttribute="leading" secondItem="9Tf-US-6Im" secondAttribute="leading" id="Yto-UA-2M8"/>
+                <constraint firstItem="EEN-Fy-AQU" firstAttribute="top" secondItem="9Tf-US-6Im" secondAttribute="bottom" constant="16" id="b40-Hx-u5r"/>
                 <constraint firstItem="4Aw-IA-Mpz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="bno-5o-bqX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EEN-Fy-AQU" secondAttribute="trailing" constant="5" id="ceG-49-hjT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="64i-4X-CmX" secondAttribute="trailing" constant="5" id="egK-zD-qs5"/>
+                <constraint firstItem="JxK-ec-Avz" firstAttribute="bottom" secondItem="9Tf-US-6Im" secondAttribute="bottom" id="emQ-Nc-Nbv"/>
                 <constraint firstItem="64i-4X-CmX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="gcA-sa-x6i"/>
-                <constraint firstItem="QGw-AB-To4" firstAttribute="top" secondItem="kd2-Vv-qSX" secondAttribute="bottom" constant="8" id="hfO-zj-Ack"/>
+                <constraint firstItem="9Tf-US-6Im" firstAttribute="top" secondItem="piO-Ff-P6k" secondAttribute="bottom" constant="8" symbolic="YES" id="gpB-ck-Kzm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Tf-US-6Im" secondAttribute="trailing" constant="5" id="iRH-kG-TYJ"/>
                 <constraint firstItem="64i-4X-CmX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kDK-EC-gwK"/>
+                <constraint firstItem="EEN-Fy-AQU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="m9E-u2-v0w"/>
                 <constraint firstItem="piO-Ff-P6k" firstAttribute="top" secondItem="qN0-QM-INU" secondAttribute="bottom" constant="8" id="qHS-sq-IlB"/>
+                <constraint firstItem="Rmo-F7-QpW" firstAttribute="bottom" secondItem="EEN-Fy-AQU" secondAttribute="bottom" id="qaC-nL-34q"/>
                 <constraint firstItem="qN0-QM-INU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rPA-on-Rv1"/>
-                <constraint firstItem="kd2-Vv-qSX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rof-Eq-pQ2"/>
                 <constraint firstItem="64i-4X-CmX" firstAttribute="top" secondItem="4Aw-IA-Mpz" secondAttribute="bottom" constant="8" id="x0l-uN-sEW"/>
+                <constraint firstItem="JxK-ec-Avz" firstAttribute="top" secondItem="9Tf-US-6Im" secondAttribute="top" id="xZN-pI-hHJ"/>
+                <constraint firstItem="Rmo-F7-QpW" firstAttribute="leading" secondItem="EEN-Fy-AQU" secondAttribute="leading" id="xud-v6-iK3"/>
+                <constraint firstItem="Rmo-F7-QpW" firstAttribute="trailing" secondItem="EEN-Fy-AQU" secondAttribute="trailing" id="yGx-o9-232"/>
             </constraints>
             <point key="canvasLocation" x="60" y="98.104265402843595"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
